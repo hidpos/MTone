@@ -1,8 +1,127 @@
 ﻿  MTuneRenderWindow.cpp
-  source.cpp
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(18,13): warning C4244: =: преобразование "const float" в "int", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(18,27): warning C4244: =: преобразование "const float" в "int", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(43,35): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(43,35): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(43,35): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(43,35): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(43,35): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(43,25): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(43,25): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(43,25): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(43,25): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(43,25): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(44,32): warning C4244: аргумент: преобразование "const int" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(44,24): warning C4244: аргумент: преобразование "const int" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(45,61): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(45,61): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(45,61): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(45,61): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(45,61): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(45,38): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(45,38): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(45,38): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(45,38): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(45,38): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(46,49): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(46,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(47,65): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(47,65): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(47,65): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(47,65): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(47,65): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(47,40): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(47,40): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(47,40): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(47,40): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(47,40): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(48,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(48,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(49,73): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(49,73): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(49,73): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(49,73): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(49,73): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(49,57): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(49,57): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(49,57): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(49,57): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(49,57): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(50,87): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(50,58): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(51,71): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(51,71): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(51,71): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(51,71): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(51,71): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(51,57): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(51,57): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(51,57): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(51,57): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(51,57): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(52,49): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(52,35): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(53,65): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(53,65): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(53,65): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(53,65): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(53,65): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(53,40): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(53,40): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(53,40): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(53,40): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(53,40): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(67,67): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(67,67): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(67,67): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(67,67): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(67,67): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(67,41): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(67,41): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(67,41): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(67,41): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(67,41): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(73,64): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(73,23): warning C4244: инициализация: преобразование "float" в "const int", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(74,63): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(74,27): warning C4244: инициализация: преобразование "float" в "const int", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(79,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(79,37): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(80,67): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(80,67): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(80,67): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(80,67): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(80,67): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(80,42): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(80,42): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(80,42): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(80,42): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(80,42): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(85,58): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(85,58): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(85,58): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(85,58): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(85,58): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(85,44): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(85,44): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(85,44): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(85,44): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(85,44): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(88,12): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(86,45): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(98,16): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(98,16): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(98,16): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(98,16): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(98,16): warning C4244:         ]
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(97,69): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(97,69): warning C4244:         with
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(97,69): warning C4244:         [
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(97,69): warning C4244:             T=float
+D:\PROJECTS\MTone\MTone\MToneP\MToneP\MTuneRenderWindow.cpp(97,69): warning C4244:         ]
   Создание кода
-  3 of 72 functions ( 4.2%) were compiled, the rest were copied from previous compilation.
+  2 of 112 functions ( 1.8%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    2 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   MToneP.vcxproj -> D:\PROJECTS\MTone\MTone\MToneP\Release\MToneP.exe

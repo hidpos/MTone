@@ -5,15 +5,16 @@
 using namespace std;
 using namespace sf;
 
+const float window_w = 800;
+const float window_h = 500;
 
 int main()
 {
-	const float window_w = 800;
-	const float window_h = 500;
-	ContextSettings settings;	settings.antialiasingLevel = 8;
-	MTuneRenderWindow window(VideoMode(window_w, window_h), "MTune", Style::Titlebar, settings);
-
-
+	MTuneRenderWindow window(VideoMode(window_w, window_h), "MTune", Style::Close);
+	Music music_controller;
+	music_controller.openFromFile("FOVLA - CRUSHER.mp3");
+	music_controller.play();
+	
 	while (window.isOpen())
 	{
 		Event e;
@@ -23,7 +24,10 @@ int main()
 		}
 		window.clear();
 
-		window.InitBackground(window_w, window_h, Color(71, 75, 88));
+		window.InitBackground(window_w, window_h);
+		window.SetSongName("FOVLA - CRUSHER");
+		window.UpdateStatusPanel(music_controller);
+		window.UpdateControlPanel(music_controller);
 
 		window.display();
 	}
