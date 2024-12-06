@@ -21,7 +21,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 178,
+          "DockedWidth": 188,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "MToneP\\source.cpp",
               "ToolTip": "D:\\PROJECTS\\MTone\\MTone\\MToneP\\MToneP\\source.cpp",
               "RelativeToolTip": "MToneP\\source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-03T14:55:06.7Z",
               "EditorCaption": ""
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "DockedWidth": 222,
+          "DockedWidth": 262,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -51,7 +51,7 @@
               "RelativeDocumentMoniker": "MToneP\\MTuneRenderWindow.cpp",
               "ToolTip": "D:\\PROJECTS\\MTone\\MTone\\MToneP\\MToneP\\MTuneRenderWindow.cpp",
               "RelativeToolTip": "MToneP\\MTuneRenderWindow.cpp",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAgwFcAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-04T14:35:15.712Z",
               "EditorCaption": ""
@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "MToneP\\MTuneRenderWindow.h",
               "ToolTip": "D:\\PROJECTS\\MTone\\MTone\\MToneP\\MToneP\\MTuneRenderWindow.h",
               "RelativeToolTip": "MToneP\\MTuneRenderWindow.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-04T14:35:03.647Z",
               "EditorCaption": ""

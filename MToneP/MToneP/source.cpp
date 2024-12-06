@@ -1,8 +1,6 @@
-#include <iostream>
 #include "SFML/Graphics.hpp"
 #include "MTuneRenderWindow.h"
 
-using namespace std;
 using namespace sf;
 
 const float window_w = 800;
@@ -12,7 +10,7 @@ int main()
 {
 	MTuneRenderWindow window(VideoMode(window_w, window_h), "MTune", Style::Close);
 	Music music_controller;
-	music_controller.openFromFile("FOVLA - CRUSHER.mp3");
+	music_controller.openFromFile("14 - Mild Waves.flac");
 	music_controller.play();
 	
 	while (window.isOpen())
@@ -20,14 +18,18 @@ int main()
 		Event e;
 		while (window.pollEvent(e))
 		{
-			if (e.type == Event::Closed) window.close();
+			const float Mx = Mouse::getPosition(window).x;
+			const float My = Mouse::getPosition(window).y;
+			if (e.type == Event::Closed) 
+				window.close(); 
+			if (e.type == Event::MouseButtonPressed)
+				window.ProcessMouseClick(Mx, My, music_controller);
 		}
 		window.clear();
 
 		window.InitBackground(window_w, window_h);
-		window.SetSongName("FOVLA - CRUSHER");
-		window.UpdateStatusPanel(music_controller);
-		window.UpdateControlPanel(music_controller);
+		window.SetSongName("14 - Mild Waves");
+		window.Update(music_controller);
 
 		window.display();
 	}
