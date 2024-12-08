@@ -4,8 +4,10 @@
 #include <SFML/Audio.hpp>
 #include <vector>
 #include <iostream>
+#include <string>
 #include <filesystem>
 using namespace sf;
+namespace fs = std::filesystem;
 
 class MTuneRenderWindow : public RenderWindow
 {
@@ -19,6 +21,7 @@ public:
 	void ProcessMouseClick(const float Mx, const float My, Music& controller);
 	void Update(const Music& controller);
 private:
+	void LoadMusicVector(std::string path);
 	bool MouseOnButton(const float mx, const float my, Sprite& sprite);
 	void TextInit(Text& text, const String info, const Vector2f pos);
 	const Color text_color = Color(223, 213, 203);
@@ -29,8 +32,9 @@ private:
 	Sprite pauseS, playS, nextS, prevS, soundOffS, soundOnS;
 	Sprite quitS, changeFolderS, changeThemeS;
 	RectangleShape soundC_bar_back;
-	std::vector<Music> music_queue;
-	String current_filePath = "";
+	std::vector<String> music_queue;
+	String current_filePath = "C:/";
+	int current_track = 0;
 	float temp_volume;
 	int window_w;
 	int window_h;

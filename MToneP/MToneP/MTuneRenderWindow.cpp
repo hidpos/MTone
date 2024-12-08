@@ -7,6 +7,7 @@ MTuneRenderWindow::MTuneRenderWindow(VideoMode mode, const String& title, Uint32
 	icon.loadFromFile("mtune_logo_panel.png");
 	setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
 	font.loadFromFile("Titania-Regular.ttf");
+	LoadMusicVector(current_filePath);
 }
 
 void MTuneRenderWindow::InitBackground(const float x, const float y)
@@ -52,6 +53,8 @@ void MTuneRenderWindow::InitBackground(const float x, const float y)
 	draw(rect);	 draw(rect_out); draw(rect_out_2); 
 	draw(rect_out_3); draw(rect_out_4); draw(rect_out_5);
 }
+
+
 
 void MTuneRenderWindow::SetSongName(String name)
 {
@@ -182,6 +185,9 @@ void MTuneRenderWindow::UpdateControlPanel(const Music& controller)
 
 void MTuneRenderWindow::UpdateFilePanel(const Music& controller)
 {
+	// playing music
+
+
 	// settings text
 	Text text, text_2, text_3, text_4, folder_path;
 	TextInit(text, "Change music folder", Vector2f(offset_2 * 3, offset_2 * 17));
@@ -233,6 +239,28 @@ void MTuneRenderWindow::ProcessMouseClick(const float Mx, const float My, Music&
 void MTuneRenderWindow::Update(const Music& controller)
 {
 	UpdateControlPanel(controller);	UpdateStatusPanel(controller); UpdateFilePanel(controller);
+}
+
+void MTuneRenderWindow::LoadMusicVector(std::string _path)
+{
+	current_filePath = _path;
+	std::string path = current_filePath;
+	for (const auto& entry : fs::directory_iterator(path))
+	{
+		std::string pathS = entry.path().u8string();
+		std::string extension{};
+		bool ext = false;
+		for (int i = 0; i < pathS.length(); i++)
+		{
+			if (pathS[i] == '.') ext = true;
+			if (ext) extension += pathS[i];
+		}
+		if (extension == ".mp3")
+		{
+			music_queue.push_back(pathS);
+			std::cout << pathS << "\n";
+		}
+	}
 }
 
 bool MTuneRenderWindow::MouseOnButton(const float mx, const float my, Sprite& sprite)
