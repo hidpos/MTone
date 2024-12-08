@@ -1,4 +1,6 @@
 #include "MTuneRenderWindow.h"
+#include <winnt.h>
+#include <WinUser.h>
 
 MTuneRenderWindow::MTuneRenderWindow(VideoMode mode, const String& title, Uint32 style)
 	: RenderWindow(mode, title, style)
@@ -8,6 +10,8 @@ MTuneRenderWindow::MTuneRenderWindow(VideoMode mode, const String& title, Uint32
 	setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
 	font.loadFromFile("Titania-Regular.ttf");
 	LoadMusicVector(current_filePath);
+	controller.openFromFile(music_queue[0]);
+	controller.play();
 }
 
 void MTuneRenderWindow::InitBackground(const float x, const float y)
@@ -58,16 +62,24 @@ void MTuneRenderWindow::InitBackground(const float x, const float y)
 
 void MTuneRenderWindow::SetSongName(String name)
 {
+	String n_name{};
+	for (int i = name.getSize() - 1; i != 0; i--)
+	{
+		if (name[i] == '/')
+			break;
+		n_name += name[i];
+	}
+	std::reverse(n_name.begin(), n_name.end());
 	Text text;
 	text.setFont(font);
-	text.setString(name);
+	text.setString(n_name);
 	text.setCharacterSize(25);
 	text.setFillColor(text_color);
 	text.setPosition(Vector2f(offset_2 * 2 + offset_el, offset_2 * 2 + offset_el));
 	draw(text);
 }
 
-void MTuneRenderWindow::UpdateStatusPanel(const Music& controller)
+void MTuneRenderWindow::UpdateStatusPanel()
 {
 	const int bar_offset = controller.getPlayingOffset().asSeconds();
 	const int track_duration = controller.getDuration().asSeconds();
@@ -97,7 +109,7 @@ void MTuneRenderWindow::UpdateStatusPanel(const Music& controller)
 	draw(text);
 }
 
-void MTuneRenderWindow::UpdateControlPanel(const Music& controller)
+void MTuneRenderWindow::UpdateControlPanel()
 {
 	// background bar
 	soundC_bar_back.setOutlineColor(text_color);
@@ -183,11 +195,22 @@ void MTuneRenderWindow::UpdateControlPanel(const Music& controller)
 	draw(soundOffS); draw(soundOnS);
 }
 
-void MTuneRenderWindow::UpdateFilePanel(const Music& controller)
+void MTuneRenderWindow::UpdateFilePanel()
 {
 	// playing music
-
-
+	SetSongName(music_queue[current_track]);
+	if ((current_track == 0 && controller.getStatus() == SoundSource::Status::Stopped) || order_changed)
+	{
+		controller.openFromFile(music_queue[current_track]);
+		controller.play();
+		order_changed = false;
+	}
+	if (controller.getStatus() == SoundSource::Status::Stopped && !music_queue.empty())
+	{
+		current_track++;
+		controller.openFromFile(music_queue[current_track]);
+		controller.play();
+	}
 	// settings text
 	Text text, text_2, text_3, text_4, folder_path;
 	TextInit(text, "Change music folder", Vector2f(offset_2 * 3, offset_2 * 17));
@@ -217,7 +240,7 @@ void MTuneRenderWindow::UpdateFilePanel(const Music& controller)
 	draw(changeThemeS);
 }
 
-void MTuneRenderWindow::ProcessMouseClick(const float Mx, const float My, Music& controller)
+void MTuneRenderWindow::ProcessMouseClick(const float Mx, const float My)
 {
 	if (Mx > soundC_bar_back.getPosition().x + 10 && Mx < soundC_bar_back.getPosition().x + soundC_bar_back.getSize().x && My > soundC_bar_back.getPosition().y && My < soundC_bar_back.getPosition().y + soundC_bar_back.getSize().y)
 		controller.setVolume((Mx - soundC_bar_back.getPosition().x) * 100 / soundC_bar_back.getSize().x);
@@ -234,11 +257,44 @@ void MTuneRenderWindow::ProcessMouseClick(const float Mx, const float My, Music&
 		controller.setVolume(temp_volume);
 	if (MouseOnButton(Mx, My, quitS))
 		close();
+	if (MouseOnButton(Mx, My, nextS) && current_track != music_queue.size()-1)
+	{
+		current_track++;	order_changed = true;
+	}
+	if (MouseOnButton(Mx, My, prevS) && current_track != 0)
+	{
+		current_track--;	order_changed = true;
+	}
+	if (MouseOnButton(Mx, My, changeThemeS))
+	{
+		text_color = Color(rand() % 255, rand() % 255, rand() % 255);
+		primary_color = Color(rand() % 255, rand() % 255, rand() % 255);
+	}
+	if (MouseOnButton(Mx, My, changeFolderS))
+	{
+		HANDLE h;
+		if (!OpenClipboard(NULL))
+			return;
+		h = GetClipboardData(CF_TEXT);
+		current_filePath = (char*)h;
+		CloseClipboard();
+		for (int i = 0; i < current_filePath.getSize(); i++)
+		{
+			if (current_filePath[i] == '\\')
+			{
+				current_filePath[i] = '/';
+			}
+		}
+		LoadMusicVector(current_filePath);
+		controller.openFromFile(music_queue[0]);
+		controller.play();
+	}
 }
 
-void MTuneRenderWindow::Update(const Music& controller)
+
+void MTuneRenderWindow::Update()
 {
-	UpdateControlPanel(controller);	UpdateStatusPanel(controller); UpdateFilePanel(controller);
+	UpdateControlPanel();	UpdateStatusPanel(); UpdateFilePanel();
 }
 
 void MTuneRenderWindow::LoadMusicVector(std::string _path)
@@ -255,10 +311,9 @@ void MTuneRenderWindow::LoadMusicVector(std::string _path)
 			if (pathS[i] == '.') ext = true;
 			if (ext) extension += pathS[i];
 		}
-		if (extension == ".mp3")
+		if (extension == ".mp3" || extension == ".flac" || extension == ".wav")
 		{
 			music_queue.push_back(pathS);
-			std::cout << pathS << "\n";
 		}
 	}
 }

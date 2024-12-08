@@ -9,9 +9,6 @@ const float window_h = 500;
 int main()
 {
 	MTuneRenderWindow window(VideoMode(window_w, window_h), "MTune", Style::Close);
-	Music music_controller;
-	music_controller.openFromFile("14 - Mild Waves.flac");
-	music_controller.play();
 	
 	while (window.isOpen())
 	{
@@ -23,13 +20,12 @@ int main()
 			if (e.type == Event::Closed) 
 				window.close(); 
 			if (e.type == Event::MouseButtonPressed)
-				window.ProcessMouseClick(Mx, My, music_controller);
+				window.ProcessMouseClick(Mx, My);
 		}
 		window.clear();
 
 		window.InitBackground(window_w, window_h);
-		window.SetSongName("14 - Mild Waves");
-		window.Update(music_controller);
+		window.Update();
 
 		window.display();
 	}
