@@ -1,7 +1,7 @@
 ## MTune
 
 <p align="center">
-<img src="[https://github.com/user-attachments/assets/ade62638-1252-414d-baff-33a629f48dfd](https://github.com/user-attachments/assets/04bb4e93-145d-455f-9970-377420c90ba0)">
+<img src="https://github.com/user-attachments/assets/94e2512a-fac3-46a9-a404-80f29af2d50e">
 </p>
 
 ## About
