@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "D:\\PROJECTS\\MTone\\MTone\\MToneP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Visual Studio\\VC\\Tools\\MSVC\\14.42.34433\\include\\filesystem||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C460CAB8-7966-4E3E-866E-4235DEC044AF}|MToneP\\MToneP.vcxproj|D:\\PROJECTS\\MTone\\MTone\\MToneP\\MToneP\\MTuneRenderWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C460CAB8-7966-4E3E-866E-4235DEC044AF}|MToneP\\MToneP.vcxproj|solutionrelative:MToneP\\MTuneRenderWindow.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -26,7 +29,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "source.cpp",
               "DocumentMoniker": "D:\\PROJECTS\\MTone\\MTone\\MToneP\\MToneP\\source.cpp",
               "RelativeDocumentMoniker": "MToneP\\source.cpp",
@@ -46,19 +49,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "filesystem",
+              "DocumentMoniker": "D:\\Visual Studio\\VC\\Tools\\MSVC\\14.42.34433\\include\\filesystem",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Visual Studio\\VC\\Tools\\MSVC\\14.42.34433\\include\\filesystem",
+              "ToolTip": "D:\\Visual Studio\\VC\\Tools\\MSVC\\14.42.34433\\include\\filesystem",
+              "RelativeToolTip": "..\\..\\..\\..\\Visual Studio\\VC\\Tools\\MSVC\\14.42.34433\\include\\filesystem",
+              "ViewState": "AgIAAGMKAAAAAAAAAAAiwHYKAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-09T07:51:16.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MTuneRenderWindow.cpp",
               "DocumentMoniker": "D:\\PROJECTS\\MTone\\MTone\\MToneP\\MToneP\\MTuneRenderWindow.cpp",
               "RelativeDocumentMoniker": "MToneP\\MTuneRenderWindow.cpp",
               "ToolTip": "D:\\PROJECTS\\MTone\\MTone\\MToneP\\MToneP\\MTuneRenderWindow.cpp",
               "RelativeToolTip": "MToneP\\MTuneRenderWindow.cpp",
-              "ViewState": "AgIAAAwBAAAAAAAAAAAAADoBAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAKkAAAAAAAAAAADwv84AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-04T14:35:15.712Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MTuneRenderWindow.h",
               "DocumentMoniker": "D:\\PROJECTS\\MTone\\MTone\\MToneP\\MToneP\\MTuneRenderWindow.h",
               "RelativeDocumentMoniker": "MToneP\\MTuneRenderWindow.h",

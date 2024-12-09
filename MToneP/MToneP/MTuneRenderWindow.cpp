@@ -198,7 +198,14 @@ void MTuneRenderWindow::UpdateControlPanel()
 void MTuneRenderWindow::UpdateFilePanel()
 {
 	// playing music
-	SetSongName(music_queue[current_track]);
+	String content = {};
+	for (int i = 0; i < music_queue[current_track].getSize(); i++)
+	{
+		if (music_queue[current_track][i] == '.')
+			break;
+		content += music_queue[current_track][i];
+	}
+	SetSongName(content);
 	if ((current_track == 0 && controller.getStatus() == SoundSource::Status::Stopped) || order_changed)
 	{
 		controller.openFromFile(music_queue[current_track]);
@@ -285,6 +292,8 @@ void MTuneRenderWindow::ProcessMouseClick(const float Mx, const float My)
 				current_filePath[i] = '/';
 			}
 		}
+		current_filePath += '/';
+		music_queue.clear();
 		LoadMusicVector(current_filePath);
 		controller.openFromFile(music_queue[0]);
 		controller.play();
